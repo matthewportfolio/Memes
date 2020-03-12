@@ -1,0 +1,95 @@
+$font-family-base: "Karla", sans-serif;
+$body-bg: #181a1b;
+$font-size-base: 1rem;
+$enable-rounded: true;
+$card-bg: #2c2c2c;
+$card-border-width: 0rem;
+$secondary: hsl(202, 100%, 50%);
+
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap");
+@import "node_modules/bootstrap/scss/bootstrap";
+
+html {
+  overflow-x: hidden;
+}
+
+img.meme {
+  cursor: zoom-in;
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  margin: auto;
+}
+
+h1.error {
+  font-size: 15rem;
+  vertical-align: "baseline";
+  color: hsl(202, 100%, 50%);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+div.logo {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+  top: 10px;
+  left: 200px;
+  color: white;
+  position: relative;
+  font-family: "Cutive Mono", monospace;
+  font-size: 7rem;
+}
+
+h1.title {
+  font-size: 8rem;
+}
+
+h2.createdBy {
+  position: relative;
+  color: hsl(202, 100%, 50%);
+  top: -40px;
+  left: 5px;
+  font-size: 1.1rem;
+}
+
+img.logo {
+  height: 100px;
+  top: 50px;
+  left: -110px;
+  position: absolute;
+}
+
+.dim {
+  pointer-events: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: hsl(202, 100%, 42%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
